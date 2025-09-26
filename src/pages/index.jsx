@@ -1,6 +1,9 @@
 
+import Contato from "../components/contanto";
 import ConteudoPrincipal from "../components/conteudoPrincipal";
 import Header from "../components/Header";
+import Mostruario from "../components/mostruario";
+import SobreMim from "../components/sobreMim";
 
 function Home() {
 
@@ -8,7 +11,10 @@ function Home() {
 
         <>
            <Header/>
-            <ConteudoPrincipal/>
+           <ConteudoPrincipal/>
+           <SobreMim/>
+           <Mostruario/>
+           <Contato/>
         </>
 
     )

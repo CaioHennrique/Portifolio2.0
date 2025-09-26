@@ -13,13 +13,4 @@ export default createGlobalStyle`
     
 }
 
-:root{
-
-    -CorDescricao: #716E6E;
-    -CorBannerProjetos: #1A2436;
-    -CorNavBarProjeto: #1F2937;
-
-}
-
-
 `

@@ -1,0 +1,44 @@
+import Titulo from "../titulo";
+import { Background, Container, Content } from "./styled";
+import Img from "../../assets/CaioHenrique.png"
+import Button from "../button";
+import Descricao from "../descricao";
+function SobreMim() {
+
+    return (
+
+        <Background>
+            <Container>
+
+                <Titulo>Sobre Mim</Titulo>
+                <img src={Img} alt="" />
+
+                <Content>
+                    
+                    <h2>Ola, Me Chamo</h2>
+                    <h3>Caio Henrique</h3>
+
+                    <Descricao>
+                        Sou desenvolvedor Front end movido pela curiosidade e vontade de criar experiências digitais marcantes. Acredito que cada linha
+                        de  código conecta inovação  e proposito.
+                        Gosto de unir tecnologia e negócios para
+                        gerar soluções de valor real. Sou desenvolvedor Front end movido pela curiosidade e vontade de criar experiências digitais marcantes. Acredito que cada linha
+                        de  código conecta inovação  e proposito.
+                        Gosto de unir tecnologia e negócios para
+                        gerar soluções de valor real.
+                    </Descricao>
+
+                </Content>
+
+                <div>
+                    <Button>Donwload CV</Button>
+                    <Button>Ver Projetos</Button>
+                </div>
+
+            </Container>
+        </Background>
+
+    )
+}
+
+export default SobreMim

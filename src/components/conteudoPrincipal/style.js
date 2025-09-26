@@ -3,12 +3,15 @@ import styled from "styled-components";
 const Background = styled.div`
 
   background: #0C151F;
-  background: linear-gradient(180deg,rgba(12, 21, 31, 1) 8%, rgba(37, 37, 88, 1) 30%, rgba(36, 29, 66, 1) 48%);
+  background: linear-gradient(180deg,rgba(12, 21, 31, 1) 8%, rgba(37, 37, 88, 1) 30%, rgba(36, 29, 66, 1) 48%, rgba(12, 21, 31, 1) 100%);
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -1;
   position: relative;
-  padding: 7rem 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   
     &::before{
 
@@ -37,9 +40,11 @@ const ContentPrincipal = styled.main`
     }
 
     div{
+
         display: flex;
-        gap: 1rem;
+        gap: 1.5rem;
     }
+
 `
 
 const IconContent = styled.div`

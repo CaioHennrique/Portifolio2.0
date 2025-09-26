@@ -1,8 +1,16 @@
-function Home(){
+
+import ConteudoPrincipal from "../components/conteudoPrincipal";
+import Header from "../components/Header";
+
+function Home() {
 
     return (
 
-        <h1>meu portifolio</h1>
+        <>
+           <Header/>
+            <ConteudoPrincipal/>
+        </>
+
     )
 }
 

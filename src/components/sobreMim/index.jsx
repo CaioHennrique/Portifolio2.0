@@ -3,6 +3,10 @@ import { Background, Container, Content } from "./styled";
 import Img from "../../assets/CaioHenrique.png"
 import Button from "../button";
 import Descricao from "../descricao";
+import Curriculum from "../../assets/curriculum.pdf"
+import { IoNewspaper } from "react-icons/io5";
+import { SiPolymerproject } from "react-icons/si";
+
 function SobreMim() {
 
     return (
@@ -31,8 +35,8 @@ function SobreMim() {
                 </Content>
 
                 <div>
-                    <Button>Donwload CV</Button>
-                    <Button>Ver Projetos</Button>
+                    <Button link={Curriculum}  > <span><IoNewspaper /></span>Donwload CV</Button>
+                    <Button transparente={true} link ="https://github.com/CaioHennrique">  <span><SiPolymerproject /></span>Ver Projetos</Button>
                 </div>
 
             </Container>

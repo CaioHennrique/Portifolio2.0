@@ -2,6 +2,13 @@ import { Background, Container, Navbar, ContainerProjeto } from "./styled"
 import Descricao from "../descricao"
 import Titulo from "../titulo"
 import Img from "../../assets/codeMovies.png"
+import Button from "../button";
+
+import { SiPolymerproject } from "react-icons/si";
+import { FaProjectDiagram } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+
+
 
 function Mostruario() {
 
@@ -18,24 +25,29 @@ function Mostruario() {
                 </Descricao>
 
                 <Navbar>
-                    <a href="#"> $ <span>Projetos</span></a>
-                    <a href="#"> $ <span>Tecnologias</span></a>
+                    <button > <span><FaProjectDiagram /></span>Ver Projetos</button>
+                    <button > <span><SiPolymerproject /></span>Tecnologias</button>
                 </Navbar>
 
                 <ContainerProjeto>
+
                     <img src={Img} alt="capa codeMovies" />
 
+
+                    <h2>CodeMovies</h2>
+                    <Descricao>
+                        Aplicação web inspirada em plataformas de streaming, 
+                        onde o usuário pode explorar filmes e séries, assistir 
+                        trailers e visualizar detalhes de cada produção. Desenvolvido
+                        com React e Styled-Components, focado em design responsivo e experiência do usuário.
+                    </Descricao>
+
                     <div>
-
-                        <h2>CodeMovies</h2>
-                        <Descricao>
-                            Lorem ipsum dolor sit amet co
-                            nsectetur adipisicing elit. Error, velit eveniet i
-                            llo magnam est obcaecati. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis hic officiis voluptates voluptatum omnis qui.
-                        </Descricao>
+                        <Button link="https://codemovies.netlify.app/"> <span><FaProjectDiagram /></span> Ver Projeto</Button>
+                        <Button transparente={true} link="https://github.com/CaioHennrique/DevMovies"> <span><FaGithub /></span> GitHub </Button>
                     </div>
-                </ContainerProjeto>
 
+                </ContainerProjeto>
 
             </Container>
         </Background>

@@ -6,7 +6,6 @@ const Background = styled.div`
   background: linear-gradient(180deg,rgba(12, 21, 31, 1) 8%, rgba(37, 37, 88, 1) 30%, rgba(36, 29, 66, 1) 48%, rgba(12, 21, 31, 1) 100%);
   background-repeat: no-repeat;
   background-size: cover;
-  z-index: -1;
   position: relative;
   display: flex;
   align-items: center;
@@ -23,7 +22,7 @@ const Background = styled.div`
          left: 0;
          width: 100%;
          height: 100%;
-         z-index: -1;
+         z-index: 0;
 
     }
 
@@ -35,17 +34,23 @@ const Container = styled.div`
  align-items: center;
  justify-content: center;
  flex-direction: column;
+ z-index: 1;
 
     img{
       height: 10rem;
       border-radius: 100%;
       background-color: #CCC;
       margin: 2.5rem 0;
+      box-shadow: rgba(66, 30, 143, 0.62) 0px 8px 24px 0px, rgba(34, 7, 188, 0.68) 0px 2px 16px 0px;
     }
 
     div{
       display: flex;
       gap: 1.5rem;
+
+       span {
+            margin-right:.3rem;
+        }
     }
 
 `

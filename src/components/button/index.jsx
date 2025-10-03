@@ -1,12 +1,14 @@
-import { Btn } from "./styled"
+import { Btn, BtnTransparent } from "./styled"
 
-function Button ({children, ...rest}){
+function Button({ children, transparente, link }) {
 
-return (
+   return (
 
-   <Btn{...rest}>{children}</Btn>
+      <>
+         {transparente ? (<BtnTransparent href={link} target="_blank" rel="noopener noreferrer" >{children}</BtnTransparent>) : (<Btn href={link} target="_blank" rel="noopener noreferrer" >{children}</Btn>)}
+      </>
 
-)
+   )
 
 }
 

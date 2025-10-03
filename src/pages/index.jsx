@@ -1,6 +1,7 @@
 
 import Contato from "../components/contanto";
 import ConteudoPrincipal from "../components/conteudoPrincipal";
+import Footer from "../components/footer";
 import Header from "../components/Header";
 import Mostruario from "../components/mostruario";
 import SobreMim from "../components/sobreMim";
@@ -15,6 +16,7 @@ function Home() {
            <SobreMim/>
            <Mostruario/>
            <Contato/>
+           <Footer/>
         </>
 
     )

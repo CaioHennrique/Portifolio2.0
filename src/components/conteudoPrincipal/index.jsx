@@ -1,8 +1,11 @@
 import Titulo from "../titulo"
-import { ContentPrincipal,IconContent, Background} from "./style"
+import { ContentPrincipal, IconContent, Background } from "./style"
 import Button from "../button";
 import { BsGithub } from "react-icons/bs";
 import { BsLinkedin } from "react-icons/bs";
+import { BsFillPersonCheckFill } from "react-icons/bs";
+import { IoNewspaper } from "react-icons/io5";
+import Curriculum from "../../assets/curriculum.pdf"
 
 function ConteudoPrincipal() {
 
@@ -12,18 +15,16 @@ function ConteudoPrincipal() {
             <ContentPrincipal>
 
                 <IconContent>
-
-                    <a href="#"><BsLinkedin /></a>
-                    <a href="#"> <BsGithub /></a>
-                   
+                    <a href="https://www.linkedin.com/in/caiohenrique-dev/" target="_blanck"><BsLinkedin /></a>
+                    <a href="https://github.com/CaioHennrique" target="_blanck"> <BsGithub /></a>
                 </IconContent>
 
-                 <h2>Caio Henrique</h2>
-                 <Titulo>Desenvolvedor Front-End</Titulo>
+                <h2>Caio Henrique</h2>
+                <Titulo>Desenvolvedor Front-End</Titulo>
 
                 <div>
-                      <Button>Donwload CV</Button>
-                      <Button>Contato</Button>
+                    <Button  link={Curriculum}  > <span><IoNewspaper /></span> Donwload CV</Button>
+                    <Button transparente = {true}  > <span><BsFillPersonCheckFill /></span> Contato</Button>
                 </div>
 
             </ContentPrincipal>

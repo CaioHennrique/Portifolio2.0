@@ -6,8 +6,8 @@ function Contato() {
 
     return (
 
-        <Background>
-            <Container>
+        <Background id="contato">
+            <Container >
                 <Titulo>Contato</Titulo>
 
                 <Formulario >

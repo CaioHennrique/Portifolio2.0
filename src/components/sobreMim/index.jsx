@@ -36,7 +36,7 @@ function SobreMim() {
 
                 <div>
                     <Button link={Curriculum}  > <span><IoNewspaper /></span>Donwload CV</Button>
-                    <Button transparente={true} link ="https://github.com/CaioHennrique">  <span><SiPolymerproject /></span>Ver Projetos</Button>
+                    <Button transparente={true} link ="#projetos"> <span><SiPolymerproject /></span>Ver Projetos</Button>
                 </div>
 
             </Container>

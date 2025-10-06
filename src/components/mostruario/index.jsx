@@ -7,6 +7,7 @@ import Button from "../button";
 import { SiPolymerproject } from "react-icons/si";
 import { FaProjectDiagram } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
+import Card from "../card";
 
 
 
@@ -14,7 +15,7 @@ function Mostruario() {
 
     return (
 
-        <Background>
+        <Background id="projetos">
             <Container>
 
                 <Titulo> Mostruário de Portfólio</Titulo>
@@ -29,25 +30,11 @@ function Mostruario() {
                     <button > <span><SiPolymerproject /></span>Tecnologias</button>
                 </Navbar>
 
-                <ContainerProjeto>
-
-                    <img src={Img} alt="capa codeMovies" />
-
-
-                    <h2>CodeMovies</h2>
-                    <Descricao>
-                        Aplicação web inspirada em plataformas de streaming, 
+                <Card img= {Img} titulo="CodeMovies" descricao=" Aplicação web inspirada em plataformas de streaming, 
                         onde o usuário pode explorar filmes e séries, assistir 
                         trailers e visualizar detalhes de cada produção. Desenvolvido
-                        com React e Styled-Components, focado em design responsivo e experiência do usuário.
-                    </Descricao>
-
-                    <div>
-                        <Button link="https://codemovies.netlify.app/"> <span><FaProjectDiagram /></span> Ver Projeto</Button>
-                        <Button transparente={true} link="https://github.com/CaioHennrique/DevMovies"> <span><FaGithub /></span> GitHub </Button>
-                    </div>
-
-                </ContainerProjeto>
+                        com React e Styled-Components, focado em design responsivo e experiência do usuário." linkProjeto="https://codemovies.netlify.app/" 
+                        linkGit="https://github.com/CaioHennrique/DevMovies"  />
 
             </Container>
         </Background>

@@ -15,8 +15,8 @@ function ConteudoPrincipal() {
             <ContentPrincipal>
 
                 <IconContent>
-                    <a href="https://www.linkedin.com/in/caiohenrique-dev/" target="_blanck"><BsLinkedin /></a>
-                    <a href="https://github.com/CaioHennrique" target="_blanck"> <BsGithub /></a>
+                    <a href="https://www.linkedin.com/in/caiohenrique-dev/" target="_blank"><BsLinkedin /></a>
+                    <a href="https://github.com/CaioHennrique" target="_blank"> <BsGithub /></a>
                 </IconContent>
 
                 <h2>Caio Henrique</h2>
@@ -24,7 +24,7 @@ function ConteudoPrincipal() {
 
                 <div>
                     <Button  link={Curriculum}  > <span><IoNewspaper /></span> Donwload CV</Button>
-                    <Button transparente = {true}  > <span><BsFillPersonCheckFill /></span> Contato</Button>
+                    <Button transparente = {true} link="#contato"> <span><BsFillPersonCheckFill /></span> Contato</Button>
                 </div>
 
             </ContentPrincipal>

@@ -11,7 +11,7 @@ function SobreMim() {
 
     return (
 
-        <Background>
+        <Background id="sobremim">
             <Container>
 
                 <Titulo>Sobre Mim</Titulo>

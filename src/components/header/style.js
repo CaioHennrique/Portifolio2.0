@@ -3,7 +3,7 @@ import { IoIosMenu } from "react-icons/io";
 
 const Cabecalho = styled.header`
 
-    background-color: transparent;
+    background-color: black;
     padding: 1rem;
     display: flex;
     align-items: center;
@@ -11,6 +11,7 @@ const Cabecalho = styled.header`
     position: fixed;
     width: 100%;
     z-index: 99;
+   
 
 `
 
@@ -18,7 +19,7 @@ const IconMenu = styled(IoIosMenu)`
 
     font-size: 1.5rem;
     color: white;
-
+    
 `
 
 export { Cabecalho ,IconMenu }

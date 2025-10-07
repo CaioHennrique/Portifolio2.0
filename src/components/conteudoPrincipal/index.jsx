@@ -11,7 +11,7 @@ function ConteudoPrincipal() {
 
     return (
 
-        <Background>
+        <Background id="home">
             <ContentPrincipal>
 
                 <IconContent>

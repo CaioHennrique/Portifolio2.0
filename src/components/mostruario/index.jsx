@@ -1,5 +1,8 @@
-import { Background, Container, Navbar, Botao, Lista, ReactIcon,
-HtmlIcon, JsIcon, CssIcon, StyledcomponentsIcon } from "./styled"
+import {
+    Background, Container, Navbar, Botao, Lista, ReactIcon,
+    HtmlIcon, JsIcon, CssIcon, StyledcomponentsIcon,
+    FadeWrapper
+} from "./styled"
 import Descricao from "../descricao"
 import Titulo from "../titulo"
 import Img from "../../assets/codeMovies.png"
@@ -38,13 +41,16 @@ function Mostruario() {
 
 
                 {secaoAtiva === "projetos" ? (
-                    <Card img={Img} titulo="CodeMovies" descricao=" Aplicação web inspirada em plataformas de streaming, 
+                    <FadeWrapper key="projetos">
+                        <Card img={Img} titulo="CodeMovies" descricao=" Aplicação web inspirada em plataformas de streaming, 
                         onde o usuário pode explorar filmes e séries, assistir 
                         trailers e visualizar detalhes de cada produção. Desenvolvido
                         com React e Styled-Components, focado em design responsivo e experiência do usuário." linkProjeto="https://codemovies.netlify.app/"
-                        linkGit="https://github.com/CaioHennrique/DevMovies" />
+                            linkGit="https://github.com/CaioHennrique/DevMovies" />
+
+                    </FadeWrapper>
                 ) : (
-                  
+                    <FadeWrapper key="tecnologias">
                         <Lista>
                             <li><ReactIcon /></li>
                             <li><JsIcon /></li>
@@ -52,6 +58,7 @@ function Mostruario() {
                             <li><CssIcon /> </li>
                             <li><StyledcomponentsIcon /> </li>
                         </Lista>
+                    </FadeWrapper>
                 )}
 
 

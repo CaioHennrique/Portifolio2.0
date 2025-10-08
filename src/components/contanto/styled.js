@@ -2,8 +2,7 @@ import styled from "styled-components";
 
 const Background = styled.div`
 
-  background: #0C151F;
-  background: linear-gradient(180deg,rgba(12, 21, 31, 1) 8%, rgba(37, 37, 88, 1) 30%, rgba(36, 29, 66, 1) 48%, rgba(12, 21, 31, 1) 100%);
+  background: var(--Background);
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -41,7 +40,7 @@ const Container = styled.div`
     border-radius: 10px;
     border: none;
     margin-top: 3rem;
-    background-color: #7C3AED;
+    background-color: var(--CorButtonRoxo);;
     color: white;
     font-weight: bold;
     font-size:.84rem;

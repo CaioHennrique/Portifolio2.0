@@ -7,7 +7,7 @@ height: 2.8rem;
 border-radius: 10px;
 border: none;
 margin-top: 3rem;
-background-color: #7C3AED;
+background-color: var(--CorButtonRoxo);
 color: white;
 font-weight: bold;
 font-size:.84rem;
@@ -25,8 +25,8 @@ justify-content: center;
 
 ${BtnPadrao}
 background-color: rgba(61, 18, 96, 0.1);
-color: #7C3AED;
-border: 1px solid #7C3AED ;
+color: var(--CorButtonRoxo);
+border: 1px solid var(--CorButtonRoxo);
 
 `
 

@@ -1,9 +1,24 @@
-import styled, {css} from "styled-components";
+import styled, {css,keyframes} from "styled-components";
 import { FaReact } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
 import { FaHtml5 } from "react-icons/fa";
 import { FaCss3 } from "react-icons/fa";
 import { SiStyledcomponents } from "react-icons/si";
+
+
+const fadeIn = keyframes`
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+`;
+
+const FadeWrapper = styled.div`
+display: flex;
+align-items: center;
+justify-content: center;
+  animation: ${fadeIn} 1s ease-in-out;
+`;
+
+
 
 const icon = css`
 
@@ -42,7 +57,7 @@ color: yellow;
 
 const Background = styled.div`
 
-  background: linear-gradient(180deg,rgba(12, 21, 31, 1) 8%, rgba(37, 37, 88, 1) 30%, rgba(36, 29, 66, 1) 48%,rgba(12, 21, 31, 1) 100%);
+  background: var(--Background);
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -97,7 +112,7 @@ const Navbar = styled.div`
 
 const Botao = styled.button`
     color: white;
-    background: ${({ $ativo }) => ($ativo ? "#6939FF" : "#1f2937d0")};
+    background: ${({ $ativo }) => ($ativo ? "var(--CorButtonRoxo);" : "#1f2937d0")};
     border-radius: 10px;
     font-size:.8rem;
     border: none;
@@ -117,14 +132,12 @@ const Botao = styled.button`
     }
 `
 const Lista = styled.ul`
-    width: 93%;
     flex-wrap: wrap;
     background-color: #1A2436 ;
     border-radius: 10px;
     padding: 1rem .8rem 1.5rem;
-    text-align: justify;
     list-style-type: none;
     display: flex;
 `
 
-export { Background, Container, Navbar, Botao, Lista, ReactIcon, JsIcon, HtmlIcon, CssIcon, StyledcomponentsIcon }
+export { Background, Container, Navbar, Botao, Lista, ReactIcon, JsIcon, HtmlIcon, CssIcon, StyledcomponentsIcon, FadeWrapper }

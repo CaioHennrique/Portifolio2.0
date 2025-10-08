@@ -1,13 +1,5 @@
 import { Container, IconClose } from "./styled"
 
-
-
-
-
-
-
-
-
 function NavbarHeader({ mostrarNavbar , ativo}) {
 
     return (

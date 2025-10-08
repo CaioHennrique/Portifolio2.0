@@ -28,20 +28,18 @@ const Background = styled.div`
 
 const Container = styled.div`
 
-display: flex;
-flex-direction: column;
-align-items: center;
-text-align: center;
-z-index: 1;
-padding: 0 .3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    z-index: 1;
+    padding: 0 .3rem;
 
-p{
-    margin: .4rem 0 1rem ;
-    padding: 0rem;
-    
-}
-
-
+    p{
+        margin: .4rem 0 1rem ;
+        padding: 0rem;
+        
+    }
 
 `
 
@@ -53,67 +51,30 @@ const Navbar = styled.div`
     padding: .8rem;
     margin: 2rem 0;
     border-radius: 10px;
-    background-color: #1a243675;
-
-        button{
-            color: white;
-            background-color: #1f2937d0;
-            border-radius: 10px;
-            font-size:.8rem;
-            border: none;
-            width: 8.4rem;
-            height: 2.7rem;
-            border-radius: 10px;
-            border: none;
-            font-weight: bold;
-            font-size:.80rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            span{
-                margin-right: .3rem;
-                margin-top: .25rem;
-            }
-        }
+    background-color: #1a243675;          
 `
 
-const ContainerProjeto = styled.div`
 
-    width: 93%;
-    background-color: #1A2436 ;
+const Botao = styled.button`
+    color: white;
+    background: ${({ $ativo }) => ($ativo ? "#6939FF" : "#1f2937d0")};
     border-radius: 10px;
-    padding: 1rem .8rem 1.5rem;
-    text-align: justify;
+    font-size:.8rem;
+    border: none;
+    width: 8.4rem;
+    height: 2.7rem;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+    font-size:.80rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-    img{
-        height: 230px;
-        width: 100%;
-        border-radius: 10px;
-
+    span{
+        margin-right: .3rem;
+        margin-top: .25rem;
     }
-
-    h2{
-        color: white;
-        margin-top: .5rem;
-        font-size: 1.4rem;
-    }
-
-    div{
-
-        display: flex;
-        gap: 1rem;
-
-        span{
-            margin-right:.3rem;
-        }
-        
-        a{
-            margin-top: 0;
-            width: 8rem;
-            height: 2.5rem;
-        }
-    }
-
 `
-export { Background, Container, Navbar, ContainerProjeto }
+
+export { Background, Container, Navbar, Botao  }

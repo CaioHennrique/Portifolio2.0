@@ -41,7 +41,7 @@ const Container = styled.div`
     font-size: 1.3rem;
     opacity: 0;
     transform: translateX(100%);
-    transition: all 0.4s ease;
+    transition: all 1s ease-in-out;
     animation: ${({ ativo }) => (ativo ? css`${slideIn} 0.4s forwards` : css`${slideOut} 0.4s forwards`)};
 
     &.ativo {

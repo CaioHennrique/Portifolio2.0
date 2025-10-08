@@ -1,17 +1,17 @@
-import { Background, Container, Navbar, ContainerProjeto } from "./styled"
+import { Background, Container, Navbar, Botao } from "./styled"
 import Descricao from "../descricao"
 import Titulo from "../titulo"
 import Img from "../../assets/codeMovies.png"
-import Button from "../button";
 
 import { SiPolymerproject } from "react-icons/si";
 import { FaProjectDiagram } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa";
 import Card from "../card";
+import { useState } from "react";
 
 
 
 function Mostruario() {
+    const [secaoAtiva, setSecaoAtiva] = useState("projetos");
 
     return (
 
@@ -26,15 +26,30 @@ function Mostruario() {
                 </Descricao>
 
                 <Navbar>
-                    <button > <span><FaProjectDiagram /></span>Ver Projetos</button>
-                    <button > <span><SiPolymerproject /></span>Tecnologias</button>
+                    <Botao $ativo={secaoAtiva === "projetos"}
+                        onClick={() => setSecaoAtiva("projetos")} > <span><FaProjectDiagram /></span>Ver Projetos</Botao>
+                    <Botao $ativo={secaoAtiva === "tecnologias"}
+                        onClick={() => setSecaoAtiva("tecnologias")}> <span><SiPolymerproject /></span>Tecnologias</Botao>
                 </Navbar>
 
-                <Card img= {Img} titulo="CodeMovies" descricao=" Aplicação web inspirada em plataformas de streaming, 
+
+                {secaoAtiva === "projetos" ? (
+                    <Card img={Img} titulo="CodeMovies" descricao=" Aplicação web inspirada em plataformas de streaming, 
                         onde o usuário pode explorar filmes e séries, assistir 
                         trailers e visualizar detalhes de cada produção. Desenvolvido
-                        com React e Styled-Components, focado em design responsivo e experiência do usuário." linkProjeto="https://codemovies.netlify.app/" 
-                        linkGit="https://github.com/CaioHennrique/DevMovies"  />
+                        com React e Styled-Components, focado em design responsivo e experiência do usuário." linkProjeto="https://codemovies.netlify.app/"
+                        linkGit="https://github.com/CaioHennrique/DevMovies" />
+                ) : (
+                  
+                        <ul>
+                            <li>⚛️ React</li>
+                            <li>💅 Styled-Components</li>
+                            <li></li>
+                            <li>💻 JavaScript (ES6+)</li>
+                        </ul>
+                )}
+
+
 
             </Container>
         </Background>

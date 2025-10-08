@@ -4,14 +4,15 @@ import Breakpoints from "../../style/breakpoints";
 
 const ContainerProjeto = styled.div`
 
-    width: 90%;
+    width: 95%;
+    max-width: 450px;
     background-color: #1A2436 ;
     border-radius: 10px;
     padding: 1rem 1rem 1.5rem;
     text-align: justify;
 
     img{
-        height: 15rem;
+        height: 15em;
         width: 100%;
         border-radius: 10px;
 

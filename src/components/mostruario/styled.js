@@ -15,6 +15,7 @@ const fadeIn = keyframes`
 
 const FadeWrapper = styled.div`
 display: flex;
+flex-wrap: wrap;
 align-items: center;
 justify-content: center;
 width: 100%;
@@ -104,6 +105,12 @@ const Container = styled.div`
         padding: 0rem;
         
     }
+
+    @media ${Breakpoints.tablet} {
+      
+           padding: 0 .8rem;
+    
+      }
 `
 
 const Navbar = styled.div`
@@ -120,6 +127,15 @@ const Navbar = styled.div`
 
         padding:1rem;
         margin: 1rem 0;
+        max-width: 600px;
+        
+    }
+
+     @media ${Breakpoints.tablet} {
+
+        padding:1rem;
+        margin: 1rem 0;
+        max-width: 800px;
         
     }
 `

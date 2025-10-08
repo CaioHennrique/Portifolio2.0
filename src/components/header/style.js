@@ -28,6 +28,12 @@ const IconMenu = styled(IoIosMenu)`
         font-size: 2.2rem;
         
     }
+
+    @media ${Breakpoints.tablet} {
+
+        display: none;
+        
+    }
     
 `
 

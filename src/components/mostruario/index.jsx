@@ -47,7 +47,6 @@ function Mostruario() {
                         trailers e visualizar detalhes de cada produção. Desenvolvido
                         com React e Styled-Components, focado em design responsivo e experiência do usuário." linkProjeto="https://codemovies.netlify.app/"
                             linkGit="https://github.com/CaioHennrique/DevMovies" />
-
                     </FadeWrapper>
                 ) : (
                     <FadeWrapper key="tecnologias">

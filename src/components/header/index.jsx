@@ -14,7 +14,7 @@ function Header() {
         <>
             <Cabecalho>
                 <Titulo>Caio Henrique</Titulo>
-                {navbar && <NavbarHeader mostrarNavbar = {setNavbar} ativo = {navbar}/>}
+               <NavbarHeader mostrarNavbar = {setNavbar} ativo = {navbar}/>
                 <IconMenu onClick={() => setNavbar(!navbar)} />
             </Cabecalho>
         </>

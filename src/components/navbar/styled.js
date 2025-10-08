@@ -44,7 +44,7 @@ const Container = styled.div`
     opacity: 0;
     transform: translateX(100%);
     transition: all 1s ease-in-out;
-    animation: ${({ ativo }) => (ativo ? css`${slideIn} 1s forwards` : css`${slideOut} 0.4s forwards`)};
+    animation: ${({ ativo }) => (ativo ? css`${slideIn} .6s forwards` : css`${slideOut} .6s forwards`)};
 
     &.ativo {
         opacity: 1;
@@ -82,6 +82,34 @@ const Container = styled.div`
     background-color: black;
    }
 
+    @media ${Breakpoints.tablet} {
+
+    flex-direction: row;
+    justify-content:end;
+    align-content:center;
+    padding: .5rem ;
+    background-color:  black;
+    position: relative;
+    width: 65%;
+    gap:.8rem;
+    font-size: 1.3rem;
+    bottom:0;
+    opacity: 1;
+    transform: none;
+    animation: none;
+    transition:none;
+
+
+      div{
+        display:none;
+      }
+
+      a{
+        margin-left:1rem;
+      }
+    }
+
+
 
 `
 
@@ -92,6 +120,10 @@ const IconClose = styled(IoClose)`
 
     @media ${Breakpoints.medio} {
       font-size: 2.2rem;
+    }
+
+    @media ${Breakpoints.tablet} {
+      display: none;
     }
 
 `

@@ -5,6 +5,7 @@ const Background = styled.div`
   background: var(--Background);
   position: relative;
   min-height: 100vh;
+  
   display: flex;
   align-items: center;
   justify-content: center;
@@ -63,6 +64,7 @@ const Formulario = styled.div`
   display: flex;
   flex-direction: column;
   width: 90%;
+  max-width: 800px;
   gap: 0.5rem;
   margin-top: 1.5rem;
 

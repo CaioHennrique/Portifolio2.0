@@ -1,5 +1,5 @@
 import Titulo from "../titulo";
-import { Background, Container, Content } from "./styled";
+import { Background, Container, Content, ContainerButton } from "./styled";
 import Img from "../../assets/CaioHenrique.svg"
 import Button from "../button";
 import Descricao from "../descricao";
@@ -18,7 +18,7 @@ function SobreMim() {
                 <img src={Img} alt="Imagem Caio Henrique" />
 
                 <Content>
-                    
+
                     <h2>Ola, Me Chamo</h2>
                     <h3>Caio Henrique</h3>
 
@@ -33,13 +33,11 @@ function SobreMim() {
                     </Descricao>
 
                 </Content>
-
-                <div>
-                    <Button link={Curriculum}  > <span><IoNewspaper /></span>Donwload CV</Button>
-                    <Button transparente={true} link ="#projetos"> <span><SiPolymerproject /></span>Ver Projetos</Button>
-                </div>
-
             </Container>
+            <ContainerButton>
+                <Button link={Curriculum}  > <span><IoNewspaper /></span>Donwload CV</Button>
+                <Button transparente={true} link="#projetos"> <span><SiPolymerproject /></span>Ver Projetos</Button>
+            </ContainerButton>
         </Background>
 
     )

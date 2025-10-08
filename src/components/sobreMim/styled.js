@@ -3,12 +3,10 @@ import Breakpoints from "../../style/breakpoints";
 
 const Background = styled.div`
   background: var(--Background);
-  background-repeat: no-repeat;
-  background-size: cover;
   position: relative;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
+  align-items: start;
   height: 100vh;
   
     &::before{
@@ -43,18 +41,22 @@ const Container = styled.div`
     box-shadow: rgba(66, 30, 143, 0.62) 0px 8px 24px 0px, rgba(34, 7, 188, 0.68) 0px 2px 16px 0px;
   }
 
-  div{
-    display: flex;
-    gap: 1.5rem;
+`
 
-      span {
-          margin-right:.3rem;
-      }
-      a{
-        margin:1rem 0;
-      }
-  }
+const ContainerButton = styled.div`
+ 
+  display: flex;
+  gap: 1.5rem;
+  z-index: 1;
+  padding: 1rem 1rem 0;
 
+    span {
+      margin-right:.3rem;
+    }
+    
+    a{
+      margin:1rem 0;
+    }
 `
 
 const Content = styled.article`
@@ -94,4 +96,4 @@ const Content = styled.article`
 
 
 `
-export { Background, Container, Content }
+export { Background, Container, Content, ContainerButton }

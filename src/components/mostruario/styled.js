@@ -1,4 +1,44 @@
-import styled from "styled-components";
+import styled, {css} from "styled-components";
+import { FaReact } from "react-icons/fa";
+import { IoLogoJavascript } from "react-icons/io";
+import { FaHtml5 } from "react-icons/fa";
+import { FaCss3 } from "react-icons/fa";
+import { SiStyledcomponents } from "react-icons/si";
+
+const icon = css`
+
+font-size: 3rem;
+margin: .5rem .4rem; 
+`
+
+const ReactIcon = styled(FaReact)`
+${icon}
+color: blue;
+
+`
+const JsIcon = styled(IoLogoJavascript)`
+${icon}
+color: yellow;
+
+`
+
+const HtmlIcon = styled(FaHtml5)`
+${icon}
+color: #fc5c00ff;
+
+`
+
+const CssIcon = styled(FaCss3)`
+${icon}
+color: blue;
+
+`
+const StyledcomponentsIcon = styled(SiStyledcomponents)`
+${icon}
+font-size: 3rem;
+color: yellow;
+`
+
 
 const Background = styled.div`
 
@@ -76,5 +116,15 @@ const Botao = styled.button`
         margin-top: .25rem;
     }
 `
+const Lista = styled.ul`
+    width: 93%;
+    flex-wrap: wrap;
+    background-color: #1A2436 ;
+    border-radius: 10px;
+    padding: 1rem .8rem 1.5rem;
+    text-align: justify;
+    list-style-type: none;
+    display: flex;
+`
 
-export { Background, Container, Navbar, Botao  }
+export { Background, Container, Navbar, Botao, Lista, ReactIcon, JsIcon, HtmlIcon, CssIcon, StyledcomponentsIcon }

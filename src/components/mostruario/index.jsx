@@ -1,4 +1,5 @@
-import { Background, Container, Navbar, Botao } from "./styled"
+import { Background, Container, Navbar, Botao, Lista, ReactIcon,
+HtmlIcon, JsIcon, CssIcon, StyledcomponentsIcon } from "./styled"
 import Descricao from "../descricao"
 import Titulo from "../titulo"
 import Img from "../../assets/codeMovies.png"
@@ -7,6 +8,9 @@ import { SiPolymerproject } from "react-icons/si";
 import { FaProjectDiagram } from "react-icons/fa";
 import Card from "../card";
 import { useState } from "react";
+
+
+
 
 
 
@@ -41,12 +45,13 @@ function Mostruario() {
                         linkGit="https://github.com/CaioHennrique/DevMovies" />
                 ) : (
                   
-                        <ul>
-                            <li>⚛️ React</li>
-                            <li>💅 Styled-Components</li>
-                            <li></li>
-                            <li>💻 JavaScript (ES6+)</li>
-                        </ul>
+                        <Lista>
+                            <li><ReactIcon /></li>
+                            <li><JsIcon /></li>
+                            <li><HtmlIcon /></li>
+                            <li><CssIcon /> </li>
+                            <li><StyledcomponentsIcon /> </li>
+                        </Lista>
                 )}
 
 

@@ -1,5 +1,7 @@
 import styled, {keyframes, css} from "styled-components";
 import { IoClose } from "react-icons/io5";
+import Breakpoints from "../../style/breakpoints"
+
 
 
 const slideIn = keyframes`
@@ -42,7 +44,7 @@ const Container = styled.div`
     opacity: 0;
     transform: translateX(100%);
     transition: all 1s ease-in-out;
-    animation: ${({ ativo }) => (ativo ? css`${slideIn} 0.4s forwards` : css`${slideOut} 0.4s forwards`)};
+    animation: ${({ ativo }) => (ativo ? css`${slideIn} 1s forwards` : css`${slideOut} 0.4s forwards`)};
 
     &.ativo {
         opacity: 1;
@@ -87,6 +89,10 @@ const IconClose = styled(IoClose)`
 
     font-size: 1.5rem;
     color: white;
+
+    @media ${Breakpoints.medio} {
+      font-size: 2.2rem;
+    }
 
 `
 

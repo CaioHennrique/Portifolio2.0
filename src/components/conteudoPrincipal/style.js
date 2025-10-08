@@ -1,15 +1,14 @@
 import styled from "styled-components";
+import Breakpoints from "../../style/breakpoints";
 
 const Background = styled.div`
-
   background: var(--Background);
-  background-repeat: no-repeat;
-  background-size: cover;
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+ 
   
     &::before{
 
@@ -48,6 +47,15 @@ const ContentPrincipal = styled.main`
         }
     }
 
+    @media ${Breakpoints.medio} {
+
+        h2{
+            font-size: 2rem;
+           
+        }
+        
+    }
+
 `
 
 const IconContent = styled.div`
@@ -67,7 +75,14 @@ const IconContent = styled.div`
         }
     }
 
-    
+    @media ${Breakpoints.medio} {
+
+        a {
+            font-size: 3rem;
+            padding: 1rem;
+        }
+        
+    }
 
 `
 

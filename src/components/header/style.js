@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { IoIosMenu } from "react-icons/io";
+import Breakpoints from "../../style/breakpoints";
 
 const Cabecalho = styled.header`
 
@@ -11,6 +12,8 @@ const Cabecalho = styled.header`
     position: fixed;
     width: 100%;
     z-index: 99;
+
+    
    
 
 `
@@ -19,6 +22,12 @@ const IconMenu = styled(IoIosMenu)`
 
     font-size: 1.5rem;
     color: white;
+
+    @media ${Breakpoints.medio} {
+
+        font-size: 2.2rem;
+        
+    }
     
 `
 

@@ -1,27 +1,25 @@
 import styled from "styled-components";
+import Breakpoints from "../../style/breakpoints";
 
 const Background = styled.div`
-
   background: var(--Background);
-  background-repeat: no-repeat;
-  background-size: cover;
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  
-    &::before{
 
-      content:"";
-      background-color: rgba(0, 0, 0, .35);
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: 0;
-    }
+  &::before{
+
+    content:"";
+    background-color: rgba(0, 0, 0, .35);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
 
 `
 
@@ -45,6 +43,16 @@ const Container = styled.div`
     font-weight: bold;
     font-size:.84rem;
       
+  }
+
+  @media ${Breakpoints.medio} {
+
+    button {
+      width: 10rem;
+      height: 3.5rem;
+      font-size: 1rem;
+    }
+    
   }
 
 

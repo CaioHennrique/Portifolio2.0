@@ -1,16 +1,17 @@
 import styled from "styled-components";
+import Breakpoints from "../../style/breakpoints";
 
 
 const ContainerProjeto = styled.div`
 
-    width: 93%;
+    width: 90%;
     background-color: #1A2436 ;
     border-radius: 10px;
-    padding: 1rem .8rem 1.5rem;
+    padding: 1rem 1rem 1.5rem;
     text-align: justify;
 
     img{
-        height: 230px;
+        height: 15rem;
         width: 100%;
         border-radius: 10px;
 
@@ -36,6 +37,24 @@ const ContainerProjeto = styled.div`
             width: 8rem;
             height: 2.5rem;
         }
+    }
+
+    @media ${Breakpoints.medio} {
+
+        img{
+            height: 20rem;
+        }
+        h2{
+            font-size:1.6rem;
+        }
+
+        div{
+            a{
+                height: 3rem;
+                width: 10rem;
+            }
+        }
+        
     }
 
 `

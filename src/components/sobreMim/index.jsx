@@ -1,6 +1,6 @@
 import Titulo from "../titulo";
 import { Background, Container, Content } from "./styled";
-import Img from "../../assets/CaioHenrique.png"
+import Img from "../../assets/CaioHenrique.svg"
 import Button from "../button";
 import Descricao from "../descricao";
 import Curriculum from "../../assets/curriculum.pdf"
@@ -15,7 +15,7 @@ function SobreMim() {
             <Container>
 
                 <Titulo>Sobre Mim</Titulo>
-                <img src={Img} alt="" />
+                <img src={Img} alt="Imagem Caio Henrique" />
 
                 <Content>
                     

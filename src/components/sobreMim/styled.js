@@ -1,7 +1,7 @@
 import styled from "styled-components";
+import Breakpoints from "../../style/breakpoints";
 
 const Background = styled.div`
-
   background: var(--Background);
   background-repeat: no-repeat;
   background-size: cover;
@@ -9,7 +9,6 @@ const Background = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  
   height: 100vh;
   
     &::before{
@@ -35,22 +34,26 @@ const Container = styled.div`
  flex-direction: column;
  z-index: 1;
 
-    img{
-      height: 10rem;
-      border-radius: 100%;
-      background-color: #CCC;
-      margin: 2.5rem 0;
-      box-shadow: rgba(66, 30, 143, 0.62) 0px 8px 24px 0px, rgba(34, 7, 188, 0.68) 0px 2px 16px 0px;
-    }
+  img{
+    
+    height: 13rem;
+    border-radius: 50%;
+    background-color: #CCC;
+    margin: 2.5rem 0;
+    box-shadow: rgba(66, 30, 143, 0.62) 0px 8px 24px 0px, rgba(34, 7, 188, 0.68) 0px 2px 16px 0px;
+  }
 
-    div{
-      display: flex;
-      gap: 1.5rem;
+  div{
+    display: flex;
+    gap: 1.5rem;
 
-       span {
-            margin-right:.3rem;
-        }
-    }
+      span {
+          margin-right:.3rem;
+      }
+      a{
+        margin:1rem 0;
+      }
+  }
 
 `
 
@@ -74,6 +77,20 @@ const Content = styled.article`
       color: white;
       margin-bottom:.5rem;
     }
+
+    @media ${Breakpoints.medio} {
+      
+      padding: 0 1.5rem;
+    
+      h2{
+        font-size: 1.8rem;
+      }
+
+      h3{
+        font-size: 1.5rem;
+      }
+    
+  }
 
 
 `

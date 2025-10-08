@@ -1,4 +1,5 @@
 import styled, {css} from "styled-components";
+import Breakpoints from "../../style/breakpoints";
 
 const BtnPadrao = css`
 
@@ -14,6 +15,13 @@ font-size:.84rem;
 display: flex;
 align-items: center;
 justify-content: center;
+
+@media ${Breakpoints.medio} {
+
+    width: 10rem;
+    height: 3.2rem ;
+    font-size: 1rem;
+}
 
 `
 

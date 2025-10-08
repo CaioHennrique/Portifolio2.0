@@ -1,9 +1,11 @@
-import styled, {css,keyframes} from "styled-components";
+import styled, { css, keyframes } from "styled-components";
 import { FaReact } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
 import { FaHtml5 } from "react-icons/fa";
 import { FaCss3 } from "react-icons/fa";
 import { SiStyledcomponents } from "react-icons/si";
+
+import Breakpoints from "../../style/breakpoints";
 
 
 const fadeIn = keyframes`
@@ -15,7 +17,8 @@ const FadeWrapper = styled.div`
 display: flex;
 align-items: center;
 justify-content: center;
-  animation: ${fadeIn} 1s ease-in-out;
+width: 100%;
+animation: ${fadeIn} 1s ease-in-out;
 `;
 
 
@@ -58,13 +61,13 @@ color: yellow;
 const Background = styled.div`
 
   background: var(--Background);
-  background-repeat: no-repeat;
-  background-size: cover;
   position: relative;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  
+  
   
     &::before{
 
@@ -77,6 +80,12 @@ const Background = styled.div`
          height: 100%;
          z-index: 0;
  
+    }
+
+      @media ${Breakpoints.medio} {
+
+        margin: 10rem 0 5rem ; 
+        
     }
 
 `
@@ -95,7 +104,6 @@ const Container = styled.div`
         padding: 0rem;
         
     }
-
 `
 
 const Navbar = styled.div`
@@ -106,7 +114,14 @@ const Navbar = styled.div`
     padding: .8rem;
     margin: 2rem 0;
     border-radius: 10px;
-    background-color: #1a243675;          
+    background-color: #1a243675;   
+    
+    @media ${Breakpoints.medio} {
+
+        padding:1rem;
+        margin: 1rem 0;
+        
+    }
 `
 
 
@@ -130,14 +145,25 @@ const Botao = styled.button`
         margin-right: .3rem;
         margin-top: .25rem;
     }
+
+    @media ${Breakpoints.medio} {
+
+       font-size: 1rem;
+       width: 10rem;
+       height: 3.5rem;
+        
+    }
 `
 const Lista = styled.ul`
     flex-wrap: wrap;
     background-color: #1A2436 ;
     border-radius: 10px;
+    width: 90%;
     padding: 1rem .8rem 1.5rem;
     list-style-type: none;
     display: flex;
+    justify-content: space-around;
+    margin-bottom: 32.5rem;
 `
 
 export { Background, Container, Navbar, Botao, Lista, ReactIcon, JsIcon, HtmlIcon, CssIcon, StyledcomponentsIcon, FadeWrapper }

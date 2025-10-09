@@ -12,5 +12,10 @@ const Description = styled.p`
     
   }
 
+   @media ${Breakpoints.extraGrande} {
+
+    font-size: 2rem;
+    
+  }
 `
 export default Description

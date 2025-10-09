@@ -13,6 +13,12 @@ const Cabecalho = styled.header`
     width: 100%;
     z-index: 99;
 
+    @media ${Breakpoints.grande} {
+
+        padding: 1.5rem;
+        
+    }
+
     
    
 

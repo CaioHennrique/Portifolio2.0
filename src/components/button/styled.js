@@ -23,6 +23,20 @@ justify-content: center;
     font-size: 1rem;
 }
 
+@media ${Breakpoints.grande} {
+
+    width: 14rem;
+    height: 4rem ;
+    font-size: 1.4rem;
+}
+
+@media ${Breakpoints.extraGrande} {
+
+    width: 16.5rem;
+    height: 4.6rem ;
+    font-size: 1.6rem;
+}
+
 `
 
  const  Btn = styled.a`

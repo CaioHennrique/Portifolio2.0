@@ -56,6 +56,30 @@ const ContentPrincipal = styled.main`
         
     }
 
+    @media ${Breakpoints.grande} {
+
+        h2{
+            font-size: 2.5rem;
+           
+        }
+        
+        
+    }
+
+    @media ${Breakpoints.extraGrande} {
+
+        h2{
+            font-size: 3rem;
+           
+        }
+
+        div{
+        gap: 3.5rem;
+    }
+        
+        
+    }
+
 `
 
 const IconContent = styled.div`
@@ -83,6 +107,25 @@ const IconContent = styled.div`
         }
         
     }
+
+    @media ${Breakpoints.grande} {
+
+        a {
+            font-size: 3.5rem;
+            padding: 1.5rem;
+        }
+        
+    }
+
+     @media ${Breakpoints.extraGrande} {
+
+        a {
+            font-size: 3.6rem;
+            padding: 1.8rem;
+        }
+        
+    }
+
 
 `
 

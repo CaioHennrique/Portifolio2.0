@@ -13,14 +13,7 @@ const fadeIn = keyframes`
   to { opacity: 1; transform: translateY(0); }
 `;
 
-const FadeWrapper = styled.div`
-display: flex;
-flex-wrap: wrap;
-align-items: center;
-justify-content: center;
-width: 100%;
-animation: ${fadeIn} 1s ease-in-out;
-`;
+
 
 
 
@@ -28,6 +21,13 @@ const icon = css`
 
 font-size: 3rem;
 margin: .5rem .4rem; 
+
+  @media ${Breakpoints.extraGrande} {
+
+        font-size: 5rem ; 
+        margin: 0;
+        
+    }
 `
 
 const ReactIcon = styled(FaReact)`
@@ -54,7 +54,6 @@ color: blue;
 `
 const StyledcomponentsIcon = styled(SiStyledcomponents)`
 ${icon}
-font-size: 3rem;
 color: yellow;
 `
 
@@ -89,6 +88,12 @@ const Background = styled.div`
         
     }
 
+     @media ${Breakpoints.extraGrande} {
+
+        margin: 20rem 0 ; 
+        
+    }
+
 `
 
 const Container = styled.div`
@@ -110,7 +115,27 @@ const Container = styled.div`
       
            padding: 0 .8rem;
     
-      }
+    }
+       @media ${Breakpoints.grande} {
+      
+        padding: 0 2rem;
+
+           p{
+           margin: 2rem 0 ;
+           
+        
+    }
+    
+    }
+
+       @media ${Breakpoints.extraGrande} {
+      
+        p{
+           margin: 1.5rem 0 ;
+           width: 60%;  
+    }
+    
+    }
 `
 
 const Navbar = styled.div`
@@ -127,15 +152,31 @@ const Navbar = styled.div`
 
         padding:1rem;
         margin: 1rem 0;
-        max-width: 600px;
+        max-width: 90%;
         
     }
 
-     @media ${Breakpoints.tablet} {
+    @media ${Breakpoints.tablet} {
 
         padding:1rem;
         margin: 1rem 0;
-        max-width: 800px;
+        max-width: 80%;
+        
+    }
+    @media ${Breakpoints.grande} {
+
+        padding: .8rem;
+        margin: 1rem 0;
+        max-width: 90%;
+        
+    }
+
+    @media ${Breakpoints.extraGrande} {
+
+        padding: 1rem;
+        margin: 1rem 0;
+        max-width: 80%;
+        justify-content: space-evenly;
         
     }
 `
@@ -169,6 +210,30 @@ const Botao = styled.button`
        height: 3.5rem;
         
     }
+    @media ${Breakpoints.tablet} {
+
+       font-size: 1.3rem;
+       width: 12rem;
+       height: 4.5rem;
+        
+    }
+
+    @media ${Breakpoints.grande} {
+
+       font-size: 1.3rem;
+       width: 12rem;
+       height: 4.5rem;
+       cursor: pointer;
+        
+    }
+
+    @media ${Breakpoints.extraGrande} {
+
+       font-size: 1.6rem;
+       width: 14rem;
+       height: 5rem;
+        
+    }
 `
 const Lista = styled.ul`
     flex-wrap: wrap;
@@ -180,6 +245,34 @@ const Lista = styled.ul`
     display: flex;
     justify-content: space-around;
     margin-bottom: 32.5rem;
+
+
+    @media ${Breakpoints.extraGrande} {
+
+     width: 50%;
+     margin-bottom: 36rem;
+     gap: 2rem;
+        
+    }
 `
+const FadeWrapper = styled.div`
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: center;
+width: 100%;
+animation: ${fadeIn} 1s ease-in-out;
+
+p{
+    width: 100%;
+}
+
+@media ${Breakpoints.grande} {
+
+   justify-content: ${({ $key="projetos" }) => ($key="projetos" ? "space-evenly" : "center")};
+   
+    
+}
+`;
 
 export { Background, Container, Navbar, Botao, Lista, ReactIcon, JsIcon, HtmlIcon, CssIcon, StyledcomponentsIcon, FadeWrapper }

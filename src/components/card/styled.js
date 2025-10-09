@@ -57,6 +57,40 @@ const ContainerProjeto = styled.div`
         }
         
     }
+    @media ${Breakpoints.grande} {
+
+      max-width: 30rem;
+
+      div{
+            a{
+                width: 14rem;
+                height: 4rem ;
+                font-size: 1.4rem;
+            }
+        }
+
+  
+        
+    }
+
+     @media ${Breakpoints.grande} {
+
+      max-width: 35rem;
+
+        h2{
+            font-size:2rem;
+        }
+
+
+        p{
+            font-size: 1.4rem;
+        }
+   
+
+  
+        
+    }
+
 
 `
-export {ContainerProjeto }
+export { ContainerProjeto }

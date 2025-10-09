@@ -14,5 +14,16 @@ const Title = styled.h1`
 
     }
 
+      @media ${Breakpoints.grande} {
+
+        font-size: 2.8rem;
+
+    }
+
+       @media ${Breakpoints.extraGrande} {
+
+        font-size: 3rem;
+
+    }
 `
 export default Title

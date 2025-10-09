@@ -109,7 +109,15 @@ const Container = styled.div`
       }
     }
 
+     @media ${Breakpoints.grande} {
+      font-size: 1.6rem
+    }
 
+      @media ${Breakpoints.extraGrande} {
+      font-size: 1.8rem;
+      gap: 1rem;
+      padding: 1rem
+    }
 
 `
 

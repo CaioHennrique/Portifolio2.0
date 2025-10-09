@@ -56,6 +56,26 @@ const Container = styled.div`
     
   }
 
+   @media ${Breakpoints.grande} {
+
+    button {
+      width: 14rem;
+      height: 4rem ;
+      font-size: 1.4rem;
+    }
+    
+  }
+
+   @media ${Breakpoints.grande} {
+
+    button {
+      width: 16.5rem;
+    height: 4.6rem ;
+    font-size: 1.6rem;
+    }
+    
+  }
+
 
 `
 
@@ -76,6 +96,28 @@ const Formulario = styled.div`
     font-size: 1.2rem;
     resize: none;
     color: white;
+  }
+
+  @media ${Breakpoints.grande} {
+
+    input, textarea{
+  
+    padding: 1.3rem;
+    font-size: 1.7rem;
+  }
+    
+  }
+
+    @media ${Breakpoints.extraGrande} {
+
+        max-width: 1000px;
+
+    input, textarea{
+  
+    padding: 1.6rem;
+    font-size: 1.8rem;
+  }
+    
   }
 
    

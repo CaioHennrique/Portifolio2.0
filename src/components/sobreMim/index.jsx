@@ -12,9 +12,8 @@ function SobreMim() {
     return (
 
         <Background id="sobremim">
+            <Titulo>Sobre Mim</Titulo>
             <Container>
-
-                <Titulo>Sobre Mim</Titulo>
                 <img src={Img} alt="Imagem Caio Henrique" />
 
                 <Content>
@@ -32,12 +31,16 @@ function SobreMim() {
                         gerar soluções de valor real.
                     </Descricao>
 
+                    <ContainerButton>
+                        <Button link={Curriculum}  > <span><IoNewspaper /></span>Donwload CV</Button>
+                        <Button transparente={true} link="#projetos"> <span><SiPolymerproject /></span>Ver Projetos</Button>
+                    </ContainerButton>
+
                 </Content>
+
+
             </Container>
-            <ContainerButton>
-                <Button link={Curriculum}  > <span><IoNewspaper /></span>Donwload CV</Button>
-                <Button transparente={true} link="#projetos"> <span><SiPolymerproject /></span>Ver Projetos</Button>
-            </ContainerButton>
+
         </Background>
 
     )

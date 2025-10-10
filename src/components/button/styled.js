@@ -49,6 +49,7 @@ ${BtnPadrao}
 background-color: rgba(61, 18, 96, 0.1);
 color: var(--CorButtonRoxo);
 border: 1px solid var(--CorButtonRoxo);
+z-index: 99;
 
 `
 

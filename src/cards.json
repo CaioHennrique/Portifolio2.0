@@ -1,0 +1,24 @@
+[
+    {
+        "id": 1,
+        "titulo": "CodeMovies",
+        "descricao": "Aplicação web inspirada em plataformas de streaming, onde o usuário pode explorar filmes e séries, assistir  trailers e visualizar detalhes de cada produção. Desenvolvido com React e Styled-Components, focado em design responsivo e experiência do usuário.",
+        "imagem": "/public/codeMovies.png",
+        "link": "https://codemovies.netlify.app/",
+        "github": "https://github.com/CaioHennrique/DevMovies"
+    },{
+        "id": 1,
+        "titulo": "CodeMovies",
+        "descricao": "Aplicação web inspirada em plataformas de streaming, onde o usuário pode explorar filmes e séries, assistir  trailers e visualizar detalhes de cada produção. Desenvolvido com React e Styled-Components, focado em design responsivo e experiência do usuário.",
+        "imagem": "/public/codeMovies.png",
+        "link": "https://codemovies.netlify.app/",
+        "github": "https://github.com/CaioHennrique/DevMovies"
+    },{
+        "id": 1,
+        "titulo": "CodeMovies",
+        "descricao": "Aplicação web inspirada em plataformas de streaming, onde o usuário pode explorar filmes e séries, assistir  trailers e visualizar detalhes de cada produção. Desenvolvido com React e Styled-Components, focado em design responsivo e experiência do usuário.",
+        "imagem": "/public/codeMovies.png",
+        "link": "https://codemovies.netlify.app/",
+        "github": "https://github.com/CaioHennrique/DevMovies"
+    }
+]

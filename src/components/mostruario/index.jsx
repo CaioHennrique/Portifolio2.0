@@ -5,12 +5,11 @@ import {
 } from "./styled"
 import Descricao from "../descricao"
 import Titulo from "../titulo"
-import Img from "../../assets/codeMovies.png"
 
 import { SiPolymerproject } from "react-icons/si";
 import { FaProjectDiagram } from "react-icons/fa";
-import Card from "../card";
 import { useState } from "react";
+import SwiperCard from "../swiper";
 
 
 
@@ -42,11 +41,7 @@ function Mostruario() {
 
                 {secaoAtiva === "projetos" ? (
                     <FadeWrapper key="projetos">
-                        <Card img={Img} titulo="CodeMovies" descricao=" Aplicação web inspirada em plataformas de streaming, 
-                        onde o usuário pode explorar filmes e séries, assistir 
-                        trailers e visualizar detalhes de cada produção. Desenvolvido
-                        com React e Styled-Components, focado em design responsivo e experiência do usuário." linkProjeto="https://codemovies.netlify.app/"
-                        linkGit="https://github.com/CaioHennrique/DevMovies" />
+                        <SwiperCard/>
                     </FadeWrapper>
                 ) : (
                     <FadeWrapper key="tecnologias">

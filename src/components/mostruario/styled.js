@@ -267,12 +267,6 @@ p{
     width: 100%;
 }
 
-@media ${Breakpoints.grande} {
-
-   justify-content: ${({ $key="projetos" }) => ($key="projetos" ? "space-evenly" : "center")};
-   
-    
-}
-`;
+`
 
 export { Background, Container, Navbar, Botao, Lista, ReactIcon, JsIcon, HtmlIcon, CssIcon, StyledcomponentsIcon, FadeWrapper }

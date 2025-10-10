@@ -2,17 +2,40 @@ import styled from "styled-components";
 import Breakpoints from "../../style/breakpoints";
 
 
+const Container = styled.div`
+width: 97vw;
+
+
+.swiper-button-next,.swiper-button-prev
+{
+    background-color: #cccccc33;
+    border-radius: 50%;
+    padding: .4rem;
+    align-items: center;
+    margin-top:.3rem;
+   
+}
+
+.swiper-pagination {
+    margin-bottom: -.5rem;
+}
+
+`
+
+
+
+
 const ContainerProjeto = styled.div`
 
-    width: 95%;
-    max-width: 450px;
-    background-color: #1A2436 ;
-    border-radius: 10px;
-    padding: 1rem 1rem 1.5rem;
-    text-align: justify;
+width: 85vw;
+margin: 0 auto;
+background-color: #1A2436 ;
+border-radius: 10px;
+padding: 1rem 1rem 1.5rem;
+text-align: justify;
 
     img{
-        height: 15em;
+        height: 14em;
         width: 100%;
         border-radius: 10px;
 
@@ -93,4 +116,4 @@ const ContainerProjeto = styled.div`
 
 
 `
-export { ContainerProjeto }
+export { ContainerProjeto, Container }

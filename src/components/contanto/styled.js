@@ -46,35 +46,33 @@ const Container = styled.div`
       
   }
 
-  @media ${Breakpoints.medio} {
+@media ${Breakpoints.medio} {
 
-    button {
-      width: 10rem;
-      height: 3.5rem;
-      font-size: 1rem;
-    }
-    
+  button {
+    width: 10rem;
+    height: 3.5rem;
+    font-size: 1rem;
   }
+  
+}
 
-   @media ${Breakpoints.grande} {
+  @media ${Breakpoints.grande} {
 
-    button {
-      width: 14rem;
-      height: 4rem ;
-      font-size: 1.4rem;
-    }
-    
+  button {
+    width: 12rem;
+    font-size: 1.4rem;
   }
+  
+}
 
-   @media ${Breakpoints.grande} {
+  @media ${Breakpoints.extraGrande} {
 
-    button {
-      width: 16.5rem;
-    height: 4.6rem ;
-    font-size: 1.6rem;
-    }
-    
+  button {
+    width: 15rem;
+    height: 4.2rem ;
   }
+  
+}
 
 
 `
@@ -110,7 +108,7 @@ const Formulario = styled.div`
 
     @media ${Breakpoints.extraGrande} {
 
-        max-width: 1000px;
+      max-width: 1000px;
 
     input, textarea{
   

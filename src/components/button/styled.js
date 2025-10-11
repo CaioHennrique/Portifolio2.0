@@ -33,12 +33,12 @@ justify-content: center;
 
 `
 
- const  Btn = styled.a`
- ${BtnPadrao}
+const  Btn = styled.a`
+${BtnPadrao}
+
 `
 
- const  BtnTransparent = styled.a`
-
+const  BtnTransparent = styled.a`
 ${BtnPadrao}
 background-color: rgba(61, 18, 96, 0.1);
 color: var(--CorButtonRoxo);

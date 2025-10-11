@@ -89,9 +89,9 @@ const IconContent = styled.div`
     a{
         background-color:#2D2B4A ;
         display: flex;
-        padding: .8rem ;
+        padding: 1rem ;
         border-radius: 100%;
-        font-size: 1.8rem;
+        font-size: 2.5rem;
         box-shadow: rgba(66, 30, 143, 0.2) 0px 3px 20px 20px, rgba(37, 0, 245, 0.48) 0px 2px 16px 0px;
 
         &:active{
@@ -103,7 +103,6 @@ const IconContent = styled.div`
 
         a {
             font-size: 3rem;
-            padding: 1rem;
         }
         
     }

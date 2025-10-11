@@ -51,23 +51,19 @@ const Container = styled.div`
   @media ${Breakpoints.grande} {
       
      flex-direction: row-reverse;
-     justify-content: space-around;
-
-     img{
-      height: 18rem;
-      margin: 0;
-      margin-bottom: 3rem;
-     }
-  }
-
-  @media ${Breakpoints.extraGrande} {
-      
-     justify-content: space-around;
+     gap: 10%;
 
      img{
       height: 45%;
       margin: 0;
       margin-bottom: 3rem;
+     }
+  }
+
+   @media ${Breakpoints.extraGrande} {
+      
+     img{
+      height: 50%;
      }
   }
 
@@ -77,7 +73,6 @@ const ContainerButton = styled.div`
 
   display: flex;
   gap: 1.5rem;
-  padding: 1rem 0;
 
     span {
       margin-right:.3rem;
@@ -91,7 +86,7 @@ const ContainerButton = styled.div`
 const Content = styled.article`
 
 display: flex;
-padding: 0 1rem;
+padding: 0 1.5rem;
 justify-content: center;
 flex-direction: column;
 text-align: justify;
@@ -110,9 +105,6 @@ text-align: justify;
   }
 
 @media ${Breakpoints.medio} {
-  
-  padding: 0 4rem;
-
   h2{
     font-size: 1.8rem;
   }
@@ -141,7 +133,7 @@ text-align: justify;
 
 @media ${Breakpoints.extraGrande} {
   
-    width: 40%;
+    width: 50%;
     padding: 0;
 
     h2{

@@ -15,8 +15,6 @@ const fadeIn = keyframes`
 
 
 
-
-
 const icon = css`
 
 font-size: 3rem;
@@ -98,44 +96,28 @@ const Background = styled.div`
 
 const Container = styled.div`
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    z-index: 1;
-    padding: 0 .3rem;
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+z-index: 1;
+padding: 0 .3rem;
 
-    p{
-        margin: .4rem 0 1rem ;
-        padding: 0rem;
-        
-    }
-
-    @media ${Breakpoints.tablet} {
-      
-           padding: 0 .8rem;
+p{
+     margin: 1rem 0;
+    padding: 0rem;
+     width: 95%;  
     
-    }
-       @media ${Breakpoints.grande} {
-      
-        padding: 0 2rem;
+}
 
-           p{
-           margin: 2rem 0 ;
-           
-        
-    }
-    
-    }
+ @media ${Breakpoints.extraGrande} {
 
-       @media ${Breakpoints.extraGrande} {
-      
         p{
-           margin: 1.5rem 0 ;
-           width: 60%;  
+            margin: 2rem 0;
+            width: 90%;
+        }
     }
-    
-    }
+
 `
 
 const Navbar = styled.div`
@@ -143,57 +125,39 @@ const Navbar = styled.div`
     display: flex;
     width: 95%;
     justify-content: space-around;
-    padding: .8rem;
-    margin: 2rem 0;
+    padding: .3rem 0;
+    margin-bottom: 1rem;
     border-radius: 10px;
     background-color: #1a243675;   
     
     @media ${Breakpoints.medio} {
 
-        padding:1rem;
-        margin: 1rem 0;
-        max-width: 90%;
+        padding: .5rem 0;
         
     }
 
-    @media ${Breakpoints.tablet} {
-
-        padding:1rem;
-        margin: 1rem 0;
-        max-width: 80%;
-        
-    }
-    @media ${Breakpoints.grande} {
-
-        padding: .8rem;
-        margin: 1rem 0;
-        max-width: 90%;
-        
-    }
 
     @media ${Breakpoints.extraGrande} {
+        padding: .6rem 0;
+        max-width: 80%;   
 
-        padding: 1rem;
-        margin: 1rem 0;
-        max-width: 80%;
-        justify-content: space-evenly;
-        
+        p{
+            margin: 2rem 0;
+        }
     }
 `
 
 
 const Botao = styled.button`
     color: white;
-    background: ${({ $ativo }) => ($ativo ? "var(--CorButtonRoxo);" : "#1f2937d0")};
+    background: ${({ $ativo }) => ($ativo ? "var(--CorButtonRoxo);" : "transparent")};
     border-radius: 10px;
     font-size:.8rem;
     border: none;
     width: 8.4rem;
     height: 2.7rem;
     border-radius: 10px;
-    border: none;
     font-weight: bold;
-    font-size:.80rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -210,11 +174,12 @@ const Botao = styled.button`
        height: 3.5rem;
         
     }
+
     @media ${Breakpoints.tablet} {
 
-       font-size: 1.3rem;
+       font-size: 1.2rem;
        width: 12rem;
-       height: 4.5rem;
+       height: 4.1rem;
         
     }
 
@@ -229,7 +194,7 @@ const Botao = styled.button`
 
     @media ${Breakpoints.extraGrande} {
 
-       font-size: 1.6rem;
+       font-size: 1.4rem;
        width: 14rem;
        height: 5rem;
         
@@ -243,29 +208,29 @@ const Lista = styled.ul`
     padding: 1rem .8rem 1.5rem;
     list-style-type: none;
     display: flex;
-    justify-content: space-around;
-    margin-bottom: 32.5rem;
+    justify-content: center;
+    gap: .5rem;
 
+
+    @media ${Breakpoints.medio} {
+    gap: 2rem;
+        
+    }
 
     @media ${Breakpoints.extraGrande} {
 
-     width: 50%;
-     margin-bottom: 36rem;
-     gap: 2rem;
-        
+     width: 70%;
+     
     }
 `
 const FadeWrapper = styled.div`
 display: flex;
-flex-wrap: wrap;
-align-items: center;
 justify-content: center;
+align-items: start;
 width: 100%;
+height: 50vh;
 animation: ${fadeIn} 1s ease-in-out;
 
-p{
-    width: 100%;
-}
 
 `
 

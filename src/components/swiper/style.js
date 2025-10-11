@@ -3,7 +3,7 @@ import Breakpoints from "../../style/breakpoints";
 
 
 const Container = styled.div`
-width: 97vw;
+width: 95vw;
 
 
 .swiper-button-next,.swiper-button-prev
@@ -20,14 +20,23 @@ width: 97vw;
     margin-bottom: -.5rem;
 }
 
-`
 
+@media ${Breakpoints.extraGrande} {
+  
+    width: 70vw;
+        
+}
+
+
+
+`
 
 
 
 const ContainerProjeto = styled.div`
 
-width: 85vw;
+width: 90%;
+max-width: 400px ;
 margin: 0 auto;
 background-color: #1A2436 ;
 border-radius: 10px;
@@ -64,7 +73,9 @@ text-align: justify;
     }
 
     @media ${Breakpoints.medio} {
-
+        width: 95%;
+        max-width: 450px;
+     
         img{
             height: 20rem;
         }
@@ -77,28 +88,30 @@ text-align: justify;
                 height: 3rem;
                 width: 10rem;
             }
-        }
-        
+        }   
     }
+
     @media ${Breakpoints.grande} {
-
-      max-width: 30rem;
-
+        width: 95%;
+        max-width: 450px;
       div{
             a{
-                width: 14rem;
-                height: 4rem ;
-                font-size: 1.4rem;
+                width: 11rem;
+                height: 3rem ;
+                font-size: 1.2rem;
             }
         }
 
+        p{
+            margin: .2rem 0 .8rem;
+        }
   
         
     }
 
-     @media ${Breakpoints.grande} {
+     @media ${Breakpoints.extraGrande} {
 
-      max-width: 35rem;
+       max-width: 500px;
 
         h2{
             font-size:2rem;

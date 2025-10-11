@@ -16,13 +16,13 @@ const Title = styled.h1`
 
       @media ${Breakpoints.grande} {
 
-        font-size: 2.8rem;
+        font-size: 2.6rem;
 
     }
 
        @media ${Breakpoints.extraGrande} {
 
-        font-size: 3rem;
+        font-size: 2.7rem;
 
     }
 `

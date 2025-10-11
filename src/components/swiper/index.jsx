@@ -5,11 +5,30 @@ import Descricao from "../descricao";
 import Button from "../button";
 import { FaProjectDiagram } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
-import {EffectCoverflow} from "swiper/modules"
+import { useEffect, useState } from "react";
+
 
 
 
 function SwiperCard() {
+
+    const [slidePerView, setSlidePerView] = useState(2);
+
+    useEffect(() => {
+
+        function controleSlider() {
+            if (window.innerWidth < 800) {
+                setSlidePerView(1);
+            } else {
+                setSlidePerView(2);
+            }
+        }
+
+        window.addEventListener("resize", controleSlider);
+
+       
+
+    }, [])
 
 
     return (
@@ -17,12 +36,11 @@ function SwiperCard() {
         <Container>
 
             <Swiper
-                modules={[EffectCoverflow]}
-                effect="coverflow"
+
                 navigation
                 pagination={{ clickable: true }}
-                slidesPerView={1}
-                spaceBetween={10}
+                slidesPerView={slidePerView}
+                spaceBetween={0}
             >
 
                 {
@@ -38,7 +56,7 @@ function SwiperCard() {
                                 <Descricao>{info.descricao}</Descricao>
                                 <div>
                                     <Button link={info.link}> <span><FaProjectDiagram /></span> Ver Projeto</Button>
-                                    <Button transparente={true} target = "_blank" link={info.github}> <span><FaGithub /></span> GitHub </Button>
+                                    <Button transparente={true} target="_blank" link={info.github}> <span><FaGithub /></span> GitHub </Button>
                                 </div>
                             </ContainerProjeto>
 

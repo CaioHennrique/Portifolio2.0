@@ -50,7 +50,7 @@ function Mostruario() {
                             <li><JsIcon /></li>
                             <li><HtmlIcon /></li>
                             <li><CssIcon /> </li>
-                            <li><StyledcomponentsIcon /> </li>                                                    
+                            <li><StyledcomponentsIcon /> </li>                                                
                         </Lista>
                     </FadeWrapper>
                 )}

@@ -25,17 +25,11 @@ justify-content: center;
 
 @media ${Breakpoints.grande} {
 
-    width: 14rem;
+    width: 13rem;
     height: 4rem ;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
 }
 
-@media ${Breakpoints.extraGrande} {
-
-    width: 16.5rem;
-    height: 4.6rem ;
-    font-size: 1.6rem;
-}
 
 `
 

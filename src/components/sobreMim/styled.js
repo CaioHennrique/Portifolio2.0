@@ -62,10 +62,10 @@ const Container = styled.div`
 
   @media ${Breakpoints.extraGrande} {
       
-     justify-content: space-evenly;
+     justify-content: space-around;
 
      img{
-      height: 50%;
+      height: 45%;
       margin: 0;
       margin-bottom: 3rem;
      }
@@ -145,7 +145,7 @@ text-align: justify;
     padding: 0;
 
     h2{
-      font-size: 2.8rem;
+      font-size: 2.5rem;
   }
 
     h3{

@@ -1,4 +1,3 @@
-import { GrAppsRounded } from "react-icons/gr"
 
 const tamanho = {
     medio:"540px",

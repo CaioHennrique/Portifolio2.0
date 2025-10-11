@@ -69,7 +69,7 @@ const ContentPrincipal = styled.main`
     @media ${Breakpoints.extraGrande} {
 
         h2{
-            font-size: 3rem;
+            font-size: 2.8rem;
            
         }
 
@@ -111,7 +111,6 @@ const IconContent = styled.div`
     @media ${Breakpoints.grande} {
 
         a {
-            font-size: 3.5rem;
             padding: 1.5rem;
         }
         
@@ -120,7 +119,6 @@ const IconContent = styled.div`
      @media ${Breakpoints.extraGrande} {
 
         a {
-            font-size: 3.6rem;
             padding: 1.8rem;
         }
         

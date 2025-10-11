@@ -32,27 +32,36 @@ width: 95vw;
 `
 
 
-
 const ContainerProjeto = styled.div`
 
 width: 90%;
 max-width: 400px ;
+height: 34rem;
 margin: 0 auto;
 background-color: #1A2436 ;
 border-radius: 10px;
 padding: 1rem 1rem 1.5rem;
 text-align: justify;
 
+
+
     img{
         height: 14em;
         width: 100%;
         border-radius: 10px;
+        object-fit: cover;
 
+    }
+
+    p{
+        width: 100%;
+        margin: 0;
+     
     }
 
     h2{
         color: white;
-        margin-top: .5rem;
+        margin: .4rem 0;
         font-size: 1.4rem;
     }
 
@@ -60,6 +69,7 @@ text-align: justify;
 
         display: flex;
         gap: 1rem;
+        margin-top:.5rem;
 
         span{
             margin-right:.3rem;
@@ -73,8 +83,10 @@ text-align: justify;
     }
 
     @media ${Breakpoints.medio} {
+
         width: 95%;
         max-width: 450px;
+        height: 43rem;
      
         img{
             height: 20rem;
@@ -91,40 +103,31 @@ text-align: justify;
         }   
     }
 
+    @media ${Breakpoints.tablet} {
+
+        height: 45rem;
+    }
+
+
+
     @media ${Breakpoints.grande} {
-        width: 95%;
-        max-width: 450px;
       div{
             a{
                 width: 11rem;
                 height: 3rem ;
                 font-size: 1.2rem;
             }
-        }
-
-        p{
-            margin: .2rem 0 .8rem;
-        }
-  
-        
+        }        
     }
 
      @media ${Breakpoints.extraGrande} {
 
        max-width: 500px;
 
-        h2{
-            font-size:2rem;
-        }
-
-
         p{
             font-size: 1.4rem;
         }
    
-
-  
-        
     }
 
 

@@ -3,14 +3,14 @@
         "id": 1,
         "titulo": "CodeMovies",
         "descricao": "Aplicação web inspirada em plataformas de streaming, onde o usuário pode explorar filmes e séries, assistir  trailers e visualizar detalhes de cada produção. Desenvolvido com React e Styled-Components, focado em design responsivo e experiência do usuário.",
-        "imagem": "/public/codeMovies.png",
+        "imagem": "/codeMovies.png",
         "link": "https://codemovies.netlify.app/",
         "github": "https://github.com/CaioHennrique/DevMovies"
     },{
         "id": 2,
         "titulo": "Ecommerce - TechStore",
         "descricao": "TechStore é um projeto e-commerce simples desenvolvido como parte de um processo de aprendizado e prática em JavaScript, HTML e CSS. O objetivo principal é exercitar a construção de interfaces e funcionalidades buscadas, manipulando o DOM e aplicando lógica em JavaScript.",
-        "imagem": "/public/TechStore.png",
+        "imagem": "/TechStore.png",
         "link": null,
         "github": "https://github.com/CaioHennrique/techStore"
     }

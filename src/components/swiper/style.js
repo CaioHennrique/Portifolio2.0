@@ -48,7 +48,7 @@ flex-direction: column;
 
 
     img{
-        height: 100%;
+        height: 50%;
         width: 100%;
         border-radius: 10px;
         object-fit: cover;

@@ -60,7 +60,7 @@ const Background = styled.div`
 
   background: var(--Background);
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -83,6 +83,12 @@ const Background = styled.div`
       @media ${Breakpoints.medio} {
 
         margin-bottom:5rem ; 
+        
+    }
+
+     @media ${Breakpoints.grande} {
+
+        margin-bottom:25rem ; 
         
     }
 

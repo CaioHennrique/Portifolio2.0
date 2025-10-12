@@ -17,7 +17,7 @@ function SwiperCard() {
     useEffect(() => {
 
         function controleSlider() {
-            if (window.innerWidth < 800) {
+            if (window.innerWidth < 830) {
                 setSlidePerView(1);
             } else {
                 setSlidePerView(2);
@@ -26,7 +26,7 @@ function SwiperCard() {
 
         window.addEventListener("resize", controleSlider);
 
-       
+
 
     }, [])
 
@@ -55,8 +55,17 @@ function SwiperCard() {
                                 <h2>{info.titulo}</h2>
                                 <Descricao>{info.descricao}</Descricao>
                                 <div>
-                                    <Button link={info.link}> <span><FaProjectDiagram /></span> Ver Projeto</Button>
-                                    <Button transparente={true} target="_blank" link={info.github}> <span><FaGithub /></span> GitHub </Button>
+                                    {info.link && (
+                                        <Button link={info.link}>
+                                            <span><FaProjectDiagram /></span> Ver Projeto
+                                        </Button>
+                                    )}
+
+                                    {info.github && (
+                                        <Button transparente={true} target="_blank" link={info.github}>
+                                            <span><FaGithub /></span> GitHub
+                                        </Button>
+                                    )}
                                 </div>
                             </ContainerProjeto>
 

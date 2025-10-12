@@ -111,7 +111,15 @@ const IconContent = styled.div`
 
         a {
             padding: 1.5rem;
+            transition: box-shadow .5s linear;
+
+               &:hover{
+       box-shadow: rgba(72, 20, 184, 0.36) 0px 3px 15px 15px, rgba(43, 21, 168, 0.48) 0px 2px 16px 0px;;
+    }
         }
+
+        
+ 
         
     }
 

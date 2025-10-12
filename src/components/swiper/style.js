@@ -36,17 +36,19 @@ const ContainerProjeto = styled.div`
 
 width: 90%;
 max-width: 400px ;
-height: 34rem;
+height: 35rem;
 margin: 0 auto;
 background-color: #1A2436 ;
 border-radius: 10px;
-padding: 1rem 1rem 1.5rem;
+padding: 1rem ;
+gap: .4rem;
 text-align: justify;
-
+display: flex;
+flex-direction: column;
 
 
     img{
-        height: 14em;
+        height: 100%;
         width: 100%;
         border-radius: 10px;
         object-fit: cover;
@@ -56,17 +58,17 @@ text-align: justify;
     p{
         width: 100%;
         margin: 0;
+        padding: 0;
      
     }
 
     h2{
         color: white;
-        margin: .4rem 0;
         font-size: 1.4rem;
     }
 
     div{
-
+       
         display: flex;
         gap: 1rem;
         margin-top:.5rem;
@@ -79,6 +81,7 @@ text-align: justify;
             margin-top: 0;
             width: 8rem;
             height: 2.5rem;
+            cursor: pointer;
         }
     }
 
@@ -87,10 +90,9 @@ text-align: justify;
         width: 95%;
         max-width: 450px;
         height: 43rem;
+        gap: .6rem;
+        padding: 1.3rem ;
      
-        img{
-            height: 20rem;
-        }
         h2{
             font-size:1.6rem;
         }
@@ -106,12 +108,17 @@ text-align: justify;
     @media ${Breakpoints.tablet} {
 
         height: 45rem;
+        gap: .8rem;
     }
 
 
 
     @media ${Breakpoints.grande} {
+        max-width: 500px;
+         padding: 1.5rem ;
+
       div{
+        gap: 2rem;
             a{
                 width: 11rem;
                 height: 3rem ;

@@ -61,7 +61,14 @@ const Container = styled.div`
   button {
     width: 12rem;
     font-size: 1.4rem;
+    transition: box-shadow .3s linear;
+    cursor: pointer;
+    
+
+    &:hover{
+       box-shadow: rgba(96, 19, 160, 0.35) 2px 2px  12px 8px;
   }
+}
   
 }
 
@@ -83,7 +90,7 @@ const Formulario = styled.div`
   flex-direction: column;
   width: 90%;
   max-width: 800px;
-  gap: 0.5rem;
+  gap: 1rem;
   margin-top: 1.5rem;
 
     input, textarea{
@@ -96,12 +103,18 @@ const Formulario = styled.div`
     color: white;
   }
 
-  @media ${Breakpoints.grande} {
+    input:focus, textarea:focus {
+      border: 1px solid var(--CorButtonRoxo);
+       box-shadow: 0 0 10px var(--CorButtonRoxo);
+    }
 
+  @media ${Breakpoints.grande} {
+gap: 1.5rem;
     input, textarea{
-  
+    
     padding: 1.3rem;
     font-size: 1.7rem;
+
   }
     
   }

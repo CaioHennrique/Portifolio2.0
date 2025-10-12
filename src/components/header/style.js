@@ -4,7 +4,7 @@ import Breakpoints from "../../style/breakpoints";
 
 const Cabecalho = styled.header`
 
-    background-color: black;
+    background-color: #000000ff;
     padding: 1rem;
     display: flex;
     align-items: center;
@@ -15,7 +15,7 @@ const Cabecalho = styled.header`
 
     @media ${Breakpoints.grande} {
 
-        padding: 1.5rem;
+        padding: .8rem 1.5rem;
         
     }
 

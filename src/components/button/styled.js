@@ -28,6 +28,12 @@ justify-content: center;
     width: 13rem;
     height: 4rem ;
     font-size: 1.2rem;
+    transition: box-shadow .4s linear;
+
+    &:hover{
+       box-shadow: rgba(96, 19, 160, 0.35) 2px 2px  12px 8px;
+}
+
 }
 
 

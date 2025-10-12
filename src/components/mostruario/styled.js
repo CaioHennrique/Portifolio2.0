@@ -82,13 +82,13 @@ const Background = styled.div`
 
       @media ${Breakpoints.medio} {
 
-        margin: 10rem 0 5rem ; 
+        margin-bottom:5rem ; 
         
     }
 
      @media ${Breakpoints.extraGrande} {
 
-        margin: 20rem 0 ; 
+        margin-bottom: 20rem ; 
         
     }
 

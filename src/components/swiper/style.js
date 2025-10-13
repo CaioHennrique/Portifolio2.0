@@ -20,11 +20,7 @@ width: 95vw;
     margin-bottom: -.5rem;
 }
 
-@media ${Breakpoints.grande} {
-  
-    width: 68vw;
-        
-}
+
 
 @media ${Breakpoints.extraGrande} {
   
@@ -140,9 +136,12 @@ flex-direction: column;
     }
 
      @media ${Breakpoints.extraGrande} {
-          
+           height: 42rem;
+
         img{
-            height: 70%;
+            height: 65%;
+       
+
         }
 
         p{

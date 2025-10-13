@@ -128,8 +128,10 @@ flex-direction: column;
     }
 
      @media ${Breakpoints.extraGrande} {
-
-       max-width: 500px;
+          
+        img{
+            height: 70%;
+        }
 
         p{
             font-size: 1.4rem;

@@ -3,7 +3,7 @@ const tamanho = {
     medio:"540px",
     tablet:"760px",
     grande:"920px",
-    extraGrande: "1250px"
+    extraGrande: "1400px"
 }
 
 const Breakpoints ={

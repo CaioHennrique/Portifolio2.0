@@ -29,6 +29,14 @@ const Background = styled.div`
       padding-bottom: 5rem;
     }
 
+    @media ${Breakpoints.grande}{
+       h1{
+      padding-bottom: 0;
+      margin-bottom: -3rem
+    }
+
+    }
+
 `
 
 const Container = styled.div`
@@ -54,7 +62,7 @@ const Container = styled.div`
      gap: 10%;
 
      img{
-      height: 45%;
+      height: 35%;
       margin: 0;
       margin-bottom: 3rem;
      }

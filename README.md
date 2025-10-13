@@ -5,54 +5,45 @@
 
 ---
 
-## 💡 Sobre o projeto
 
-Este é meu portfólio pessoal, criado com o objetivo de apresentar um pouco sobre mim, minha trajetória e mostrar alguns dos meus projetos densenvolvido ate momento como desenvolvedor de software.
+##  Sobre o projeto
+
+O Portfólio 2.0 foi criado para demonstrar minha evolução como desenvolvedor, destacando projetos recentes, tecnologias dominadas e boas práticas de código.
+Cada seção foi pensada para oferecer uma navegação fluida e agradável, com foco em performance e estética.
+
+<br>
+
+##  Principais Funcionalidades
+
+- Mostruário de projetos com carrossel interativo  
+- Seções separadas por categorias (Projetos, Tecnologias, Contato)  
+- Design totalmente **responsivo (mobile-first)**  
+- Animações suaves e foco na experiência do usuário  
+- Layout moderno e personalizável  
+
 
 ---
 
-## 📄 Seções do site
-
-- **Home:** Uma introdução rápida com alguns links;
-- **Sobre mim:** Minha trajetória, objetivos e momento atual e links disponíveis;
-- **Mostruario:** Projetos desenvolvidos e Tecnologias e ferramentas que domino;
-- **contato:** Formas de entrar em contato;
-
----
-
-## 🛠 Tecnologias utilizadas
+##  Tecnologias utilizadas
 
 > O projeto **ainda está em desenvolvimento**, pois estou sempre aprendendo e buscando evoluir.
 
-<div>
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
-  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
-  <img src="https://img.shields.io/badge/react-blue?style=for-the-badge&logo=react&logoColor=white" />
-  <img src="https://img.shields.io/badge/styled%20components-F7DF1E?style=for-the-badge&logo=styled-components&logoColor=white" />
-</div>
+- **React.js** — biblioteca principal 
+- **Styled-Components** — estilização com CSS-in-JS
+- **React Icons** — ícones otimizados
+- **Swiper.js** — carrossel de projetos
+- **Deploy:** Vercel
 
 ---
 
-## 📚 Conceitos aplicados
+##  Conceitos aplicados
 
 Neste projeto, busquei aplicar boas práticas e conceitos importantes:
 
-- ✅ Componentes;
+- ✅ Reutilização de Componentes;
 - ✅ Acessibilidade básica;
 - ✅ Responsividade (mobile-first);
 
----
-
-## 👨🏿‍💻 Desenvolvido por
-
-<table>
-  <tr>
-    <td>
-      Feito por <a href="https://github.com/CaioHennrique" target="_blank">Caio Henrique</a>.
-    </td>
-  </tr>
-</table>
 
 ---
 
@@ -65,7 +56,7 @@ Neste projeto, busquei aplicar boas práticas e conceitos importantes:
 2. **Clonar o repositório**  
    ```bash
    
-   git clone https://github.com/CaioHennrique/DevMovies.git
+   git clone https://github.com/CaioHennrique/Portifolio2.0.git
 
 3. **Instalar as dependências**  
    - yarn install
@@ -73,3 +64,4 @@ Neste projeto, busquei aplicar boas práticas e conceitos importantes:
    - yarn dev
 5. **Acessar no navegador**
    - http://localhost:5173
+

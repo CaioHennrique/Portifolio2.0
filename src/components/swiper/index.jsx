@@ -24,10 +24,8 @@ function SwiperCard() {
             }
         }
 
+        controleSlider();
         window.addEventListener("resize", controleSlider);
-
-
-
     }, [])
 
 

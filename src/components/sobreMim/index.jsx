@@ -22,13 +22,15 @@ function SobreMim() {
                     <h3>Caio Henrique</h3>
 
                     <Descricao>
-                        Sou desenvolvedor Front end movido pela curiosidade e vontade de criar experiências digitais marcantes. Acredito que cada linha
-                        de  código conecta inovação  e proposito.
-                        Gosto de unir tecnologia e negócios para
-                        gerar soluções de valor real. Sou desenvolvedor Front end movido pela curiosidade e vontade de criar experiências digitais marcantes. Acredito que cada linha
-                        de  código conecta inovação  e proposito.
-                        Gosto de unir tecnologia e negócios para
-                        gerar soluções de valor real.
+                        Sou desenvolvedor Front-end movido pela curiosidade e pela vontade
+                        de criar experiências digitais marcantes. Acredito que cada linha
+                        de código é uma conexão entre inovação e propósito. Gosto de unir
+                        tecnologia e negócios para gerar soluções de valor real, com foco
+                        em desenvolver produtos que equilibrem design, performance e
+                        usabilidade, transformando ideias em experiências que realmente
+                        impactam o usuário. Estou sempre em busca de novos aprendizados e
+                        desafios que me permitam evoluir como profissional e contribuir com
+                        projetos inovadores.
                     </Descricao>
 
                     <ContainerButton>

@@ -208,14 +208,22 @@ const Botao = styled.button`
 `
 const Lista = styled.ul`
     flex-wrap: wrap;
-    background-color: #1A2436 ;
+   
     border-radius: 10px;
     width: 90%;
-    padding: 1rem .8rem 1.5rem;
+    margin-top: 1rem;
     list-style-type: none;
     display: flex;
     justify-content: center;
     gap: .5rem;
+
+    li{
+        background-color: #1A2436 ;
+        padding: 1rem;
+        border-radius: 10px;
+        box-shadow: 0px 10px 15px #080b11dc;
+        cursor: pointer;
+    }
 
 
     @media ${Breakpoints.medio} {

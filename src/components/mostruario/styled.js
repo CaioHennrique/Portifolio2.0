@@ -22,7 +22,7 @@ margin: .5rem .4rem;
 
   @media ${Breakpoints.extraGrande} {
 
-        font-size: 5rem ; 
+        font-size: 4.5rem ; 
         margin: 0;
         
     }
@@ -223,6 +223,11 @@ const Lista = styled.ul`
         border-radius: 10px;
         box-shadow: 0px 10px 15px #080b11dc;
         cursor: pointer;
+        transition: transform .3s linear;
+
+        &:hover{
+            transform: scale(1.1);
+        }
     }
 
 
@@ -234,6 +239,10 @@ const Lista = styled.ul`
     @media ${Breakpoints.extraGrande} {
 
      width: 70%;
+
+     li{
+        padding: 1.5rem;
+     }
      
     }
 `

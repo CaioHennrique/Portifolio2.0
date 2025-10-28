@@ -13,5 +13,12 @@
         "imagem": "/TechStore.png",
         "link": null,
         "github": "https://github.com/CaioHennrique/techStore"
+    },{
+        "id": 3,
+        "titulo": "Previsao do  tempo",
+        "descricao": "Previsao do  tempo é um projeto para ver o clima desenvolvido como parte de um processo de solidificação e prática de comsumo de api com axios, react, JavaScript, HTML e CSS. O objetivo principal é exercitar o consumo de API e sua utilização.",
+        "imagem": "/climaApi.png",
+        "link": null,
+        "github": "https://github.com/CaioHennrique/techStore"
     }
 ]

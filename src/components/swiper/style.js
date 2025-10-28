@@ -146,6 +146,7 @@ flex-direction: column;
 
         p{
             font-size: 1.4rem;
+            padding: 0;
         }
    
     }

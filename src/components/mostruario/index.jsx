@@ -1,7 +1,9 @@
 import {
     Background, Container, Navbar, Botao, Lista, ReactIcon,
     HtmlIcon, JsIcon, CssIcon, StyledcomponentsIcon,
-    FadeWrapper
+    FadeWrapper,
+    MysqlIcon,
+    NodeIcon
 } from "./styled"
 import Descricao from "../descricao"
 import Titulo from "../titulo"
@@ -51,6 +53,8 @@ function Mostruario() {
                             <li><HtmlIcon /></li>
                             <li><CssIcon /> </li>
                             <li><StyledcomponentsIcon /> </li>                                                
+                            <li><MysqlIcon /> </li>                                                
+                            <li><NodeIcon /> </li>                                                
                         </Lista>
                     </FadeWrapper>
                 )}

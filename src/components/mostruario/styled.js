@@ -1,9 +1,7 @@
 import styled, { css, keyframes } from "styled-components";
-import { FaReact } from "react-icons/fa";
+import { FaReact, FaHtml5,FaCss3,FaNodeJs  } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
-import { FaHtml5 } from "react-icons/fa";
-import { FaCss3 } from "react-icons/fa";
-import { SiStyledcomponents } from "react-icons/si";
+import { SiStyledcomponents,SiMysql } from "react-icons/si";
 
 import Breakpoints from "../../style/breakpoints";
 
@@ -54,7 +52,16 @@ const StyledcomponentsIcon = styled(SiStyledcomponents)`
 ${icon}
 color: yellow;
 `
+const MysqlIcon = styled(SiMysql)`
+${icon}
+color:  blue;
 
+`
+const NodeIcon = styled(FaNodeJs)`
+${icon}
+color:  green;
+
+`
 
 const Background = styled.div`
 
@@ -257,4 +264,4 @@ animation: ${fadeIn} 1s ease-in-out;
 
 `
 
-export { Background, Container, Navbar, Botao, Lista, ReactIcon, JsIcon, HtmlIcon, CssIcon, StyledcomponentsIcon, FadeWrapper }
+export { Background, Container, Navbar, Botao, Lista, ReactIcon, JsIcon, HtmlIcon, CssIcon, StyledcomponentsIcon, FadeWrapper,MysqlIcon,NodeIcon }

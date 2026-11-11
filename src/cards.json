@@ -20,5 +20,12 @@
         "imagem": "/climaApi.png",
         "link": null,
         "github": "https://github.com/CaioHennrique/ClimaApi"
+    },{
+        "id": 4,
+        "titulo": "Controle Financeiro",
+        "descricao": "Controle Financeiro é um projeto desenvolvido como parte do processo de solidificação e prática de desenvolvimento Full Stack, utilizando React, JavaScript, Node.js, Express e MySQL. O objetivo principal é praticar a criação e integração de uma API REST, operações CRUD e manipulação de dados em um banco de dados relacional.",
+        "imagem": "/controleFinanceiro.png",
+        "link": null,
+        "github": "https://github.com/CaioHennrique/controle_financeiro"
     }
 ]
